@@ -25,14 +25,15 @@
               clifford: '#da373d',
               "bike-primary": '#e76f51',
               "customIcon": 'rgba(171, 239, 95, 1.00)',
+              "concept-color": 'rgba(231, 193, 211, 1)',
             }
           }
         }
       }
     </script>
 </head>
-<body class="font-manrope md:container mx-auto">
-    <header class="">
+<body class="font-manrope">
+    <header class="md:container mx-auto overflow-x-hidden bg-gradient-to-r from-cyan-500 to-blue-500">
         <nav>
             <div class="flex justify-between navbar bg-base-100">
                 <div class="ml-8">
@@ -123,8 +124,154 @@
           </div>
         </section>
     </header>
-    <main>
-
+    <main class="md:container mx-auto">
+      <section>
+        <div class="flex flex-col p-4 m-4">
+          <img src="assets/Vector.png" alt="" class="w-20 h-10 p-2 mb-2">
+            <div class="flex flex-row gap-4">
+              <div class="h-full flex flex-col justify-between">
+                <div>
+                  <button class="btn mb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                    </svg>                      
+                    About us
+                  </button>
+                </div>
+                <div>
+                  <h1 class="text-3xl font-bold">We are thoughtful about livable places</h1>
+                  <p class="py-6">
+                    We build people's dream and provide them a charming place for them and for their children
+                  </p>
+                </div>
+                  <div class="card card-side bg-base-100 shadow-xl mb-4 pl-3">
+                    <figure>
+                      <img
+                        src="assets/commercial.png"
+                        alt="commercial" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title">Commercial</h2>
+                      <p>Provide spaces for rent</p>
+                    </div>
+                 </div>
+                  <div class="card card-side bg-base-100 shadow-xl pl-3">
+                      <figure>
+                        <img
+                          src="assets/residential.png"
+                          alt="residential" />
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">residential</h2>
+                        <p>Provide spaces for families to live</p>
+                      </div>
+                  </div>                 
+              </div>
+              <img src="assets/Rectangle.png" alt="" class="h-full object-cover">
+            </div>
+        </div>
+       <!--  <div class="flex flex-col md:flex-row gap-4">
+          <div>
+            <img src="assets/Vector.png" alt="" class="w-20 h-10 p-2 mb-2">
+          </div>
+          
+          <div class="h-full flex flex-col justify-between">
+            <div>
+              <button class="btn mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+                About us
+              </button>
+            </div>
+            <div>
+              <h1 class="text-3xl font-bold">We are thoughtful about livable places</h1>
+              <p class="py-6">
+                We build people's dream and provide them a charming place for them and for their children
+              </p>
+            </div>
+            <div class="card card-side bg-base-100 shadow-xl mb-4 pl-3">
+              <figure>
+                <img src="assets/commercial.png" alt="commercial" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Commercial</h2>
+                <p>Provide spaces for rent</p>
+              </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-xl pl-3">
+              <figure>
+                <img src="assets/residential.png" alt="residential" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Residential</h2>
+                <p>Provide spaces for families to live</p>
+              </div>
+            </div>
+          </div>
+           Apply h-full class to image 
+          <img src="assets/Rectangle.png" alt="" class="h-full object-cover">
+        </div> -->
+        
+      </section>
+      <section>
+        <div class="text-center">
+          <button class="btn mb-3 text-xs font-bold">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>                      
+            How we works
+          </button>
+          <h3 class="text-3xl font-bold mb-3">Our Works Process</h3>
+          <p class="text-base font-medium mb-3">We design our works process in four valuable steps which are as followed by:</p>
+        </div>
+        <div class="grid gap-4 grid-cols-4">
+          <div class="card bg-concept-color shadow-xl">
+            <figure>
+              <img
+                src="assets/concept.png"
+                alt="concept" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Concept</h2>
+              <p>Exploring new and innovative ideas</p>
+            </div>           
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="assets/flow-chart.png"
+                alt="design" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Design process</h2>
+              <p>Implement the explored ideas in real</p>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="assets/vision.png"
+                alt="Supervision" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Supervision</h2>
+              <p>Follow-up, supervising and monitoring the progress</p>
+            </div>
+          </div>
+          <div class="card bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="assets/budget-planning.png"
+                alt="budget" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Budget Planning</h2>
+              <p>Researching and announcing the budget</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
 
