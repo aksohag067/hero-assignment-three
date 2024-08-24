@@ -26,6 +26,9 @@
               "bike-primary": '#e76f51',
               "customIcon": 'rgba(171, 239, 95, 1.00)',
               "concept-color": 'rgba(231, 193, 211, 1)',
+              "design-color": 'rgba(239, 218, 110, 1)',
+              "vision-color": 'rgba(164, 218, 195, 1)',
+              "budget-color": 'rgba(119, 170, 234, 1)',
             }
           }
         }
@@ -68,7 +71,6 @@
                           <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                         </svg> 
                       </button>
-                      
                     </div>                             
                 </div>
                 <div class="dropdown">
@@ -170,48 +172,6 @@
               <img src="assets/Rectangle.png" alt="" class="h-full object-cover">
             </div>
         </div>
-       <!--  <div class="flex flex-col md:flex-row gap-4">
-          <div>
-            <img src="assets/Vector.png" alt="" class="w-20 h-10 p-2 mb-2">
-          </div>
-          
-          <div class="h-full flex flex-col justify-between">
-            <div>
-              <button class="btn mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                </svg>
-                About us
-              </button>
-            </div>
-            <div>
-              <h1 class="text-3xl font-bold">We are thoughtful about livable places</h1>
-              <p class="py-6">
-                We build people's dream and provide them a charming place for them and for their children
-              </p>
-            </div>
-            <div class="card card-side bg-base-100 shadow-xl mb-4 pl-3">
-              <figure>
-                <img src="assets/commercial.png" alt="commercial" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">Commercial</h2>
-                <p>Provide spaces for rent</p>
-              </div>
-            </div>
-            <div class="card card-side bg-base-100 shadow-xl pl-3">
-              <figure>
-                <img src="assets/residential.png" alt="residential" />
-              </figure>
-              <div class="card-body">
-                <h2 class="card-title">Residential</h2>
-                <p>Provide spaces for families to live</p>
-              </div>
-            </div>
-          </div>
-           Apply h-full class to image 
-          <img src="assets/Rectangle.png" alt="" class="h-full object-cover">
-        </div> -->
         
       </section>
       <section>
@@ -226,18 +186,18 @@
           <p class="text-base font-medium mb-3">We design our works process in four valuable steps which are as followed by:</p>
         </div>
         <div class="grid gap-4 grid-cols-4">
-          <div class="card bg-concept-color shadow-xl">
+          <div class="card bg-concept-color shadow-xl p-2">
             <figure>
               <img
                 src="assets/concept.png"
-                alt="concept" />
+                alt="concept" class="text-left"/>
             </figure>
             <div class="card-body">
               <h2 class="card-title">Concept</h2>
               <p>Exploring new and innovative ideas</p>
             </div>           
           </div>
-          <div class="card bg-base-100 shadow-xl">
+          <div class="card bg-design-color shadow-xl">
             <figure>
               <img
                 src="assets/flow-chart.png"
@@ -248,7 +208,7 @@
               <p>Implement the explored ideas in real</p>
             </div>
           </div>
-          <div class="card bg-base-100 shadow-xl">
+          <div class="card bg-vision-color shadow-xl">
             <figure>
               <img
                 src="assets/vision.png"
@@ -259,7 +219,7 @@
               <p>Follow-up, supervising and monitoring the progress</p>
             </div>
           </div>
-          <div class="card bg-base-100 shadow-xl">
+          <div class="card bg-budget-color shadow-xl">
             <figure>
               <img
                 src="assets/budget-planning.png"
@@ -272,9 +232,78 @@
           </div>
         </div>
       </section>
+      <section>
+        <div class="bg-[url('/assets/bg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed h-fit">
+          <div class="text-center">
+            <button class="btn bg-customIcon mb-3 mt-16 text-xs font-bold">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>                      
+              Let's Connect
+            </button>
+            <h3 class="text-3xl font-bold mb-3">Let's Discuss Next Project</h3>
+            <p class="text-base font-medium mb-3">We are working on several projects. Some projects are almost finished and some are half finished.</p>
+          </div>
+          <div>
+            <form class="grid grid-cols-2 gap-5 mx-40">
+              <label class="input input-bordered rounded-full flex items-center gap-2">
+                <input type="text" placeholder="First Name*" />
+              </label>
+              <label class="input input-bordered rounded-full flex items-center gap-2">
+                <input type="text" placeholder="Last Name*" />
+              </label>
+              <label class="input input-bordered rounded-full flex items-center gap-2">
+                <input type="text" placeholder="Email*" />
+              </label>
+              <label class="input input-bordered rounded-full flex items-center gap-2">
+                <input type="text" placeholder="Phone Number*" />
+              </label>
+              <textarea class="textarea textarea-bordered col-span-2" placeholder="Write your message here"></textarea>
+              <div class="col-span-2 flex justify-center items-center mb-16">
+                <button class="btn bg-customIcon rounded-full px-60">
+                  Send Mail
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-black text-white rounded-full justify-self-center self-center">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg> 
+                </button>
+              </div>
+            </form>
+            
+          </div>
+        </div>
+        
+      </section>
     </main>
-    <footer>
-
+    <footer class="md:container mx-auto bg-slate-900">
+      <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col items-center gap-4">
+          <div class="flex flex-row items-center gap-1 mt-8">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-customIcon rounded-full">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+            <a class="font-bold text-xl text-white">Rinterio</a>
+          </div>
+          <p class="text-center text-gray-300">The most reliable company you can easily trust for your better future</p>
+        </div>
+        <div class="mt-4">
+          <nav class="flex justify-center gap-4">
+            <a class="link link-hover text-white">Home</a>
+            <a class="link link-hover text-white">Services</a>
+            <a class="link link-hover text-white">Portfolio</a>
+            <a class="link link-hover text-white">Blogs</a>
+            <a class="link link-hover text-white">Contact us</a>
+          </nav>
+        </div>
+        <div class="mt-4 mb-8">
+          <button class="btn bg-customIcon rounded-full flex items-center gap-2">
+            Book Consult
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-black text-white rounded-full">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </footer>
+    
 </body>
 </html>
