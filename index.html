@@ -108,12 +108,12 @@
             
             <div class="hero-content text-center">
               <div class="">
-                <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+                <h1 class="text-3xl lg:text-5xl font-extrabold">A barn house of this design has a striking appearance</h1>
                 <p class="py-6">
                   The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
                 </p>
                 <div>
-                  <button class="btn bg-customIcon rounded-full">
+                  <button class="btn bg-customIcon rounded-full w-full sm:w-auto">
                     View Details
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-black text-white rounded-full justify-self-center self-center">
                       <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
@@ -169,12 +169,13 @@
                       </div>
                   </div>                 
               </div>
-              <img src="assets/Rectangle.png" alt="" class="h-full object-cover">
+              <img src="assets/Rectangle.png" alt="" class="h-fit object-cover">
             </div>
         </div>
         
       </section>
-      <section>
+      
+      <section class="mb-4">
         <div class="text-center">
           <button class="btn mb-3 text-xs font-bold">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -233,7 +234,7 @@
         </div>
       </section>
       <!-- Challenge part -->
-      <section>
+      <section class="mb-4">
         <div class="text-center">
           <button class="btn mb-3 text-xs font-bold">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -245,7 +246,7 @@
           <p class="text-base font-medium mb-3">Works done by our team in recent times, are as followed:</p>
         </div>
         <div>
-          <div class="grid grid-cols-3">
+          <div class="grid grid-cols-3 mb-4">
             <div class="col-span-2">
               <div class="grid grid-cols-3">
                 <div>
@@ -269,10 +270,33 @@
               <img src="assets/img2.png" alt="">
             </div>
           </div>
+          <div class="grid grid-cols-4">
+            <div>
+              <img src="assets/img3.png" alt="">
+            </div>
+            <div class="col-span-2 gap-4 flex">
+              <img src="assets/img4.png" alt="">
+              <div>
+                <h3>Residential</h3>
+                  <p>
+                    These type of constructions are for residential purpose
+                  </p>
+                  <button class="btn bg-customIcon rounded-full">
+                    View Details
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-black text-white rounded-full justify-self-center self-center">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg> 
+                  </button>
+              </div>
+            </div>
+            <div>
+              <img src="assets/img5.png" alt="">
+            </div>
+          </div>
         </div>
       </section>
       <section>
-        <div class="bg-[url('/assets/bg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed h-fit">
+        <!-- <div class="bg-[url('./assets/bg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed h-fit">
           <div class="text-center">
             <button class="btn bg-customIcon mb-3 mt-16 text-xs font-bold">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -309,9 +333,102 @@
             </form>
             
           </div>
-        </div>
+        </div> -->
+        <div class="bg-[url('./assets/bg.jpg')] bg-cover bg-center bg-no-repeat bg-fixed h-fit">
+          <div class="text-center">
+              <button class="btn bg-customIcon mb-3 mt-16 text-xs font-bold">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                  </svg>                      
+                  Let's Connect
+              </button>
+              <h3 class="text-3xl font-bold mb-3">Let's Discuss Next Project</h3>
+              <p class="text-base font-medium mb-3">We are working on several projects. Some projects are almost finished and some are half finished.</p>
+          </div>
+          <div>
+              <!-- Modified form structure -->
+              <form class="grid grid-cols-1 sm:grid-cols-2 gap-5 mx-4 md:mx-40">
+                  <label class="input input-bordered rounded-full flex items-center gap-2">
+                      <input type="text" placeholder="First Name*" />
+                  </label>
+                  <label class="input input-bordered rounded-full flex items-center gap-2">
+                      <input type="text" placeholder="Last Name*" />
+                  </label>
+                  <label class="input input-bordered rounded-full flex items-center gap-2">
+                      <input type="text" placeholder="Email*" />
+                  </label>
+                  <label class="input input-bordered rounded-full flex items-center gap-2">
+                      <input type="text" placeholder="Phone Number*" />
+                  </label>
+                  <!-- Full-width text area -->
+                  <textarea class="textarea textarea-bordered col-span-1 sm:col-span-2" placeholder="Write your message here"></textarea>
+                  <!-- Centered button with full width on small screens -->
+                  <div class="col-span-1 sm:col-span-2 flex justify-center items-center mb-16">
+                      <button class="btn bg-customIcon rounded-full w-full sm:w-auto">
+                          Send Mail
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-black text-white rounded-full justify-self-center self-center">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                          </svg> 
+                      </button>
+                  </div>
+              </form>
+          </div>
+      </div>
         
       </section>
+      <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4">
+          <h2 class="text-3xl lg:text-4xl font-bold mb-8 text-center">Future Vision for a Real Estate Company in 10 Years</h2>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+            <div class="card p-4 shadow-xl text-zinc-950 text-primary-content rounded-md">
+              <div class="card-body">
+                <h3 class="card-title text-xl text-center font-bold lg:text-2xl">Technological Advancements</h3>
+                <p class="text-sm text-justify">
+                  Predict how technology will transform the industry with AI for market analysis, virtual and augmented reality for property tours, blockchain for transparent transactions, and smart contracts for secure deals.
+                </p>
+              </div>
+            </div>
+      
+            <div class="card p-4 shadow-xl text-zinc-950 text-primary-content rounded-md">
+              <div class="card-body">
+                <h3 class="card-title text-xl text-center font-bold lg:text-2xl">Sustainability</h3>
+                <p class="text-sm text-justify">
+                  Discuss the importance of sustainable practices like eco-friendly materials, energy-efficient homes, and green building certifications to meet future regulations and consumer demand.
+                </p>
+              </div>
+            </div>
+
+            <div class="card p-4 shadow-xl text-zinc-950 text-primary-content rounded-md">
+              <div class="card-body">
+                <h3 class="card-title text-xl text-center font-bold lg:text-2xl">Market Expansion</h3>
+                <p class="text-sm text-justify">
+                  Explore growth areas such as expanding into emerging markets or developing new property types like co-living spaces to cater to evolving lifestyles.
+                </p>
+              </div>
+            </div>
+      
+            <div class="card p-4 shadow-xl text-zinc-950 text-primary-content rounded-md">
+              <div class="card-body">
+                <h3 class="card-title text-xl text-center font-bold lg:text-2xl">Customer Experience</h3>
+                <p class="text-sm text-justify">
+                  Consider how to enhance customer experience with personalized services, data analytics to understand preferences, and comprehensive support throughout the buying or renting process.
+                </p>
+              </div>
+            </div>
+    
+            <div class="card p-4 shadow-xl text-zinc-950 text-primary-content rounded-md">
+              <div class="card-body">
+                <h3 class="card-title text-xl text-center font-bold lg:text-2xl">Adaptability and Resilience</h3>
+                <p class="text-sm text-justify">
+                  Reflect on the importance of being adaptable to economic changes, market trends, and unexpected events. Envision a company that can swiftly respond to challenges and leverage opportunities in a dynamic market.
+                </p>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      </section> 
     </main>
     <footer class="md:container mx-auto bg-slate-900">
       <div class="flex flex-col justify-center items-center">
